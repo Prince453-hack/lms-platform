@@ -2,6 +2,7 @@ import Slide from "@/components/onboarding/slide";
 import Slider from "@/components/onboarding/slider";
 import { onBoardingSlides } from "@/configs/constants";
 import React, { useState } from "react";
+import { Text } from "react-native";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 
 const OnboardingScreen = () => {
@@ -21,7 +22,9 @@ const OnboardingScreen = () => {
         next={
           next && <Slide slide={next} totalSlider={onBoardingSlides.length} />
         }
-      ></Slider>
+      >
+        <Text></Text>
+      </Slider>
     </GestureHandlerRootView>
   );
 };
